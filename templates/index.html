@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Cado Domain WHOIS App</title>
+    </head>
+    <body>
+        <h1>Please enter IP Address or domain name:</h1>
+        <form action="http://localhost:5000/" method="GET">
+            <span>
+                <input type="text" placeholder="Search a domain..." name="domain">
+                <button type="submit">search</button>
+            </span>
+        </form>
+        <pre>{{ data | to_pretty_json }}</pre>
+    </body>
+</html>
